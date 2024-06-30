@@ -1,316 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(18, 18, 62);
-        }
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            list-style: none;
-            margin: 0 25px;
-            font-size: 24px;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            
-        }
-        nav ul li a:hover {
-            color: rgb(99, 99, 180);
-            font-size: 1.15rem;
-        }
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            margin: 140px 0;
-            align-items: center;
-        }
-        .firstSection > div {
-            width: 30%;
-        }
-        .leftSection {
-            font-size: 2rem;
-            margin: 70px 0;
-        }
-        .leftSection .buttons {
-            padding: 43px;
-        }
-        .leftSection .btn {
-            padding: 12px;
-            background: #1e2167;
-            color: white;
-            border: 2px solid white;
-            font-size: 20px;
-            cursor: pointer;
-            border-radius: 23px;
-            margin-right: 10px;
-        }
-        .rightSection img {
-            background-color: transparent;
-            width: 80%;
-        }
-        #element {
-            color: #ad19ad;
-        }
-        .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-        .secondSection .box {
-            background: white;
-            width: 80vw;
-            height: 2px;
-            margin: 56px 0px;
-            display: flex;
-        }
-        .secondSection .vertical {
-            height: 93px;
-            width: 2px;
-            background-color: white;
-            margin: 0 140px;
-        }
-        .vertical-title {
-            position: relative;
-            top: 35px;
-            width: 160px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .vertical-desc {
-            position: relative;
-            top: 46px;
-            color: grey;
-            width: 240px;
-            font-size: 17px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        .container {
-            max-width: 800px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            overflow: hidden;
-            animation: slideIn 1s ease-out;
-            text-align: center;
-            margin: 100px auto;
-            align-items: center;
-        }
-        h1, h2 {
-            color: #ff9800;
-        }
-        .section {
-            padding: 20px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        .section h2 {
-            border-bottom: 2px solid #ff9800;
-            display: inline-block;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .education, .skills {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        .education li, .skills li {
-            margin-bottom: 20px;
-            position: relative;
-            padding-left: 20px;
-            line-height: 1.6;
-        }
-        .education li::before, .skills li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 5px;
-            background: #ff9800;
-            border-radius: 3px;
-        }
-        .coursework, .skills-list {
-            margin-left: 20px;
-            list-style-type: disc;
-        }
-        .coursework li, .skills-list li {
-            animation: fadeInUp 0.5s ease forwards;
-            margin-bottom: 10px;
-        }
-        .coursework li:nth-child(odd), .skills-list li:nth-child(odd) {
-            animation-delay: 0.2s;
-        }
-        .coursework li:nth-child(even), .skills-list li:nth-child(even) {
-            animation-delay: 0.4s;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideIn {
-            from { transform: translateY(100px); }
-            to { transform: translateY(0); }
-        }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Personal Portfolio</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-169007209-3');
+  </script>
+
+
+
+  <!-- =======================================================
+  * Template Name: Personal - v2.1.0
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="left" style="font-size: 34px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: #9193bf;">Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="firstSection" id="home">
-            <div class="leftSection">
-                Hi, My name is <span style="color: #ad19ad;">Ananya</span>
-                <div> and I am a Dedicated and enthusiastic <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: rgb(115, 115, 223);">Computer science student with a strong foundation in</span></div>
-                <span id="element"></span>
-                <div class="buttons">
-                    <a href="https://docs.google.com/document/d/1-VHdFN_Z4jxHtLxTiFBkw30Y10o54XPF/edit?usp=sharing&ouid=115140215983615988382&rtpof=true&sd=true"><button class="btn">Download Resume</button></a>
-                    <a href="https://github.com/28ananya"><button class="btn">Github</button></a>
-                </div>
-            </div>
-            <div class="rightSection">
-                <img src="https://png.pngtree.com/png-vector/20200713/ourmid/pngtree-web-development-concept-flat-design-png-image_2303316.jpg">
-            </div>
-        </section>
-        <hr style="border: 0; height: 1.2px; margin: 60px 84px; background: rgb(67, 67, 144);">
-        <section class="secondSection">
-            <span style="color: grey;">What I have done so far</span>
-            <h1>Projects</h1>
-            <div id="projects">
-                <div class="box">
-                    <div class="vertical">
-                        <img src="https://sevagroup.co.in/assets/img/favicon.png" style="position: relative; top: -55px; left: -9px; width: 56px;">
-                        <div class="vertical-title">SEVA SAVE</div>
-                        <div class="vertical-desc">Developed a hospital management website with an interactive frontend using HTML, CSS, and JavaScript. Utilized MySQL and JDBC for robust data management and secure connectivity between database and server. Implemented Servlets for dynamic content generation, ensuring smooth interaction between frontend and backend. Incorporated robust user authentication mechanisms to safeguard patient, staff, and user data.</div>
-                    </div>
-                    <div class="vertical">
-                        <img src="https://thumbs.dreamstime.com/z/healthy-lifestyle-self-care-concept-healthy-lifestyle-self-care-concept-food-sports-nature-icons-arranged-173734174.jpg" style="position: relative; top: -60px; left: -9px; width: 56px;">
-                        <div class="vertical-title">
-                            SWAYAM SWASTH
-                        </div>
-        <div class="vertical-desc">
-            Secured top position at institute-level competition 
-        Designed and developed a healthcare website to facilitate blood donations, using HTML5, CSS3, and Bootstrap for a user-friendly front-end interface, and Django with MySQL for the backend.
-        Aimed to create a social impact by addressing the critical need for blood donations and improving hospital resources.
-        Integrated user login and signup functionalities to ensure secure access and personalized experiences.
-        Designed the platform to facilitate blood donation, connecting willing donors with hospitals in need.
+  
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- ======= Header ======= -->
+  <header id="header" class="header-tops">
+
+    <div class="container">
+
+      <h1><a href="index.html">Ananya Madishetty</a></h1>
+      <h2 style="color:#fff">I'm <span class="typing" style="color:#12D640"></span></h2>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header"> <span>Home</span></a></li>
+          <li><a href="#about"><span>About</span></a></li>
+          <li><a href="#education"> <span>Education</span></a></li>
+         
+          <li><a href="#portfolio"> <span>Projects</span></a></li>
+          <li><a href="#skills"> <span>Skills</span></a></li>
+          <li><a href="#links"> <span>Resume </span></a></li> 
+          <li><a href="#contacts"> <span>Contact</span></a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <div class="social-links">
+        <a href="mailto:madishettyananya80@gmail.com" target="_blank" class="gmail"><i class="bx bxl-google"></i></a>
+       
+        <a href="https://github.com/28ananya" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://www.hackerrank.com/profile/madishettyanany1" target="_blank" class="hackerrank"><img class="svg" src="assets/img/hr.png" width="17" /></a>
+        <a href="https://leetcode.com/u/ananya_2808/" target="_blank" class="hackerrank"><img class="svg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4h4yf5vhuu8_Dqf5VC1l1tFbIJ88N4H24jg&s" width="17" /></a>
+        <a href="https://www.linkedin.com/in/ananya_madishetty/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>About</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/profile.jpeg" class="img-fluid" alt="">
         </div>
-                        </div>
-                        <div class="vertical">
-                            <img src="https://images.projectsgeek.com/2016/05/College-Selector-Android.jpg" style="position: relative;top: -45px;left:-9px; width: 56px;">
-                        <div class="vertical-title">
-                           Avengers
-                        </div>
-        <div class="vertical-desc">
-            Advanced to the final round of the competition and developed a college website using HTML and CSS.
-        Showcased front-end skills with a focus on creating a user-friendly interface.
-        Designed a responsive layout and intuitive navigation for optimal user experience.
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <p> Dedicated and enthusiastic computer science student with a strong foundation in Python and web development.
+            Demonstrates excellent problem-solving abilities (DSA) and leadership qualities.Coupled with a keen interest in exploring new technologies.
+            Experienced in working with servlets and JDBC, having successfully developed and implemented several projects.
+            Quick learner with a passion for creative solutions and continuous improvement in the tech field.
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> 7671912432</li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <ul>
+                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> madishettyananya80@gmail.com</li>
+              </ul>
+            </div>
+          </div>
         </div>
-                        </div>
-                        <div class="vertical">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiSdsBo2aEEvmfCX_cIYNO4ToAtSL80EDvCQ&s" style="position: relative;top: -75px;left:-9px; width: 56px;">
-                        <div class="vertical-title">
-                            Access Hub
-                        </div>
-        <div class="vertical-desc">
-            Developed a dynamic website using HTML, CSS, and JavaScript for front-end functionalities.
-        Created sign-up and login pages to enable user authentication.Integrated JDBC and servlets for backend connectivity.
-        Ensured seamless data exchange between the user interface and the database.
-        Enhanced user interaction and data management capabilities.
+      </div>
+
+    </div><!-- End About Me -->
+
+    <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Interests</h2>
+      </div>
+  
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="ri-global-line" style="color: #ffbb2c;"></i>
+            <h3>Web Application Development</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 ">
+          <div class="icon-box">
+            <i class="ri-file-list-3-line" style="color: #47aeff;"></i>
+            <h3>Data Structures and Algorithms</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-database-2-line" style="color: #5578ff;"></i>
+            <h3>Database Management</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-database-2-line" style="color: #5578ff;"></i>
+            <h3>Django</h3>
+          </div>
+        </div>
         
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-code-s-slash-fill" style="color: #28a745;"></i>
+            <h3>Software Development</h3>
+          </div>
         </div>
-                        </div>
-                    </div>
-                    
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-code-s-slash-fill" style="color: #f1081f;"></i>
+            <h3>Python Development</h3>
+          </div>
         </div>
-                </section>
-                <div class="container">
-                    <div id="about">
-                    <h1>My Education and Technical Skills</h1>
+      </div>
+  
+    </div><!-- End Interests -->
+  </section>
+
+  <!-- ======= Education Section ======= -->
+  
+<section id="education" class="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Education</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
+
+        
+
+        <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style=" padding:0px 0px;padding-bottom: 5px;display: inline-block;width : 500px; height : 500px"">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbzWV5ptVxzelBvvs7Yf5KgoKU3xrYa2-BVA&s" class="img-fluid"  height="80px"  alt="">
+        <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>B.Tech in Computer Science and Engineering</em></p>
+        <h5 style="text-align:left;padding: 0px 10px;">Nov 2021 - July 2025</h5>
+        <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Relevant Coursework</h6>
+        <ul style="text-align:left;color:#fff;">
+          <li>C,  Java, Python</li>
+          <li>Data Structures &amp; Algorithms</li>
+          <li>Operating Systems &amp; Databases</li>
+          <li>Computer Organization &amp; Architecture</li>
+          <li>Computer Networks &amp; Machine Learning</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+  <!-- End Education Section -->
+
+<!-- Start Project Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+        <br><br>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <center><h4>SWAYAMSWASTH WEBSITE</h4></center>
+          <div class="portfolio-wrap">
+            <img src="https://blog.ipleaders.in/wp-content/uploads/2020/01/Health-Insurance.jpg" height="320" width="420" alt="">
+            <div class="portfolio-info">
+              
+              <div class="portfolio-links">
+                <center><a href="Projects/swayamswasth.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a></center>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <center><h4>SEVASAVE <h4></center>
+          <div class="portfolio-wrap">
+            <img src="https://sevagroup.co.in/assets/img/favicon.png" height="320" width="420"alt="">
+            <div class="portfolio-info">
+              
+              <div class="portfolio-links">
+                <center><a href="Projects/sevasave.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a></center>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <center><h4>ACCESSHUB</h4></center>
+          <div class="portfolio-wrap">
+            <img src="https://access-hub.com/cdn/shop/files/ah_logo3_1317x.png?v=1613156325" height="320" width="420" alt="">
+            <div class="portfolio-info">
+              
+              <div class="portfolio-links">
+                <center><a href="Projects/access.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a></center>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Project Section -->
+
+  <section id="skills" class="services" style="margin-top: 50px;">
+    <div class="container">
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+          <div class="row">
+            <div class="col-lg-12" data-aos="fade-up">
+              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
+                <h4 style="text-align:left;color:#09203a; text-decoration: underline;">Languages and Databases</h4>
+                    <p style="text-align:left;">
+                      <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="vectorlogo.zone" height="50" width="120">
+                      <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="vectorlogo.zone" height="50" width="150">
+                      <img src="https://cdn.worldvectorlogo.com/logos/c-1.svg" alt="vectorlogo.zone" height="50" width="75">
+                      
+                      <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="vectorlogo.zone" height="70" width="130">
+                     
+                    </p>
+                </div>
+    
+                <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
+                  <h4 style="text-align:left;color:#09203a; text-decoration: underline;">Web Technologies</h4>
+                      <p style="text-align:left;">
+                        <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="vectorlogo.zone" height="60" width="120">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="upload.wikimedia.org" height="60" width="50">  
+                        <img src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" alt="upload.wikimedia.org" height="60" width="120">
+                        </p>
+                  </div>
+    
+                <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+                  <h4 style="text-align:left;color:#09203a; text-decoration: underline;">Frameworks and Libraries</h4>
+                    <p style="text-align:left;">
+                      <img src="https://images.ctfassets.net/23aumh6u8s0i/2Qhstbnq6i34wLoPoAjWoq/9f66f58a22870df0d72a3cbaf77ce5b6/streamlit_hero.jpg" alt="vectorlogo.zone" height="60" width="120">
+                      <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="vectorlogo.zone">
+                      </p>
+              </div>
+              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+                  <h4 style="text-align:left;color:#09203a; text-decoration: underline;">Tools</h4>
+                    <p style="text-align:left;">
+                      <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="vectorlogo.zone">
+                      <img src="https://www.vectorlogo.zone/logos/eclipse/eclipse-ar21.svg" alt="vectorlogo.zone" height="60" width="120">
+                      <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg" alt="vectorlogo.zone" height="60" width="120">
+                      </p>
+              </div>
+    
+              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+                <h4 style="text-align:left;color:#09203a; text-decoration: underline;">Deployment</h4>
+                  <p style="text-align:left;">
                     
-                    <div class="section">
-                        <h2>Education</h2>
-                        <ul class="education">
-                            <li>
-                                <strong>Bachelor of Technology, Computer Science and Engineering</strong> (CGPA 9.26)<br>
-                                <em>2021 – 2025</em><br>
-                                Anurag University, Hyderabad<br>
-                                Relevant Coursework:
-                                <ul class="coursework">
-                                    <li>Operating Systems</li>
-                                    <li>Advanced Algorithms</li>
-                                    <li>Big Data Analytics</li>
-                                    <li>Machine Learning</li>
-                                    <li>Artificial Intelligence</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <strong>Narayana Junior College</strong> (9.76)
-                            </li>
-                        </ul>
-                    </div>
-                    </div>
-                    <div id="services">
-                    <div class="section">
-                        <h2>Technical Skills</h2>
-                        <ul class="skills">
-                            <li><strong>Programming Languages:</strong> C, Java, Python</li>
-                            <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
-                            <li><strong>Frameworks/Libraries:</strong> Streamlit, Servlets, JSP, JDBC, Django</li>
-                            <li><strong>Tools:</strong> GitHub, Visual Studio Code, Eclipse, Postman, Tomcat</li>
-                            <li><strong>Databases:</strong> MySQL</li>
-                        </ul>
-                    </div>
+                    <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" alt="vectorlogo.zone" height="60" width="120">
+                    </p>
+            </div>
+    
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <!-- ======= End Skills Section ======= -->
+
+
+
+  <!-- ======= Start CV Section ======= -->
+
+  <section id="links" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Resume & Links</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+          <a href="https://docs.google.com/document/d/1wd_1mR0TtBvfhWTONRkeFjDlVLQvw9C1/edit?usp=sharing&ouid=115140215983615988382&rtpof=true&sd=true" target="_blank"><div class="icon"><i class="icofont-page"></i></div></a>
+          <h4 class="title"><a href="https://docs.google.com/document/d/1wd_1mR0TtBvfhWTONRkeFjDlVLQvw9C1/edit?usp=sharing&ouid=115140215983615988382&rtpof=true&sd=true" target="_blank">Resume</a></h4>
+        </div>
+        
+      </div>
+    </div>
+  </section> 
+  
+  <!-- ======= End CV Section ======= -->
+
+
+
+  <!-- ======= Start Contact Section ======= -->
+
+  <section id="contacts" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+    
+          
+    
+            <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+              <div class="info-box">
+                <i class="bx bx-share-alt"></i>
+                <h3>Social Profiles</h3>
+                <div class="social-links">
+                  <a href="https://www.linkedin.com/in/ananya_madishetty/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                  <a href="https://github.com/28ananya" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+                  <a href="mailto:madishettyananya80@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+    
                 </div>
-                </div>
-            </main>
-            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-            <script>
-                var typed = new Typed('#element', {
-                  strings: ['Python Developer','Django Developer','Web Developer'],
-                  typeSpeed: 50,
-                });
-              </script>
-        </body>
-        </html>
+              </div>
+            </div>
+    
+            <div class="col-md-6 mt-4 d-flex align-items-stretch">
+              <div class="info-box">
+                <i class="bx bx-envelope"></i>
+                <h3>Email</h3>
+                
+                <p>madishettyananya80@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-4 d-flex align-items-stretch">
+              <div class="info-box">
+                <i class="bx bx-phone-call"></i>
+                <h3>Contact</h3>
+                <p>+91 767192432</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  <!-- ======= End Contact Section ======= -->
+
+
+
+  <!-- Vendor JS Files -->
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["a Python Developer",  "a Problem-Solver", "a Web Developer"],
+      loop: true,
+      typeSpeed: 85,
+      backSpeed: 85
+    });
+  </script>
+
+
+
+  <!-- Template Main JS File -->
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
